@@ -97,3 +97,14 @@ function showImage() {
     const weatherIcon = document.getElementById('weather-icon');
     weatherIcon.style.display = 'block'; // Make the image visible once it's loaded
 }
+
+function subscribeEmail() {
+    const email = document.getElementById('email').value;
+    if (!email) {
+        alert('Please enter an email address');
+        return;
+    }
+    alert(`Subscribed ${email} for weather alerts`);
+    // Here you can add functionality to actually send the email address to your backend service
+    // to store it and send weather alerts.
+}
